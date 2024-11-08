@@ -1,0 +1,7 @@
+
+header {
+    color: red;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
