@@ -1,7 +1,180 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+
+
 
 header {
-    color: red;
     text-align: center;
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4963bf;
+    color: #e3d8d8;
+    padding: 0.8vw;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+header img {
+    width: 8vw;
+    height: auto;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1.5vw;
+}
+
+header input {
+    padding: 0.8vw;
+    font-size: 1rem;
+    width: 20vw;
+}
+
+.header img{
+    width: 1.8vw;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4vw;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    max-width: 100vw;
+}
+
+
+
+
+
+
+
+
+
+.categorias ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4vw;
+    padding: 2vw;
+}
+
+.categorias li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.categorias img {
+    width: 4vw;
+    height: auto;
+    margin-bottom: 0.5vw;
+}
+
+.categorias h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.productos ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4vw;
+    padding: 2vw 0;
+}
+
+.productos li {
+    width: 20vw;
+    text-align: center;
+}
+
+.producto-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1vw;
+}
+
+.iconos {
+    width: 2vw;
+    height: auto;
+}
+
+.producto-info h3{
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+footer {
+    background: #f2f2f2;
+    padding: 0.6vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #333;
+}
+
+footer .logo {
+    width: 5vw;
+    height: auto;
+}
+
+.img-contacto {
+    width: 1.2vw;
+    height: auto;
+    margin-right: 0.5vw;
+    vertical-align: middle;
+}
+
+.footer-text p,
+.footer-contacto p {
+    max-width: 25rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-top: 1vw;
 }
