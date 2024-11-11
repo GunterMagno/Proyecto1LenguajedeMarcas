@@ -1,5 +1,4 @@
 * {
-    box-sizing: border-box;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -24,11 +23,6 @@ header h1 {
     font-size: 1.5rem;
 }
 
-header img {
-    width: 8vw;
-    height: auto;
-}
-
 header nav ul {
     display: flex;
     gap: 1.5vw;
@@ -41,7 +35,7 @@ header input {
 }
 
 .header img{
-    width: 1.8vw;
+    width: 1.4vw;
     height: auto;
 }
 
@@ -93,7 +87,7 @@ header input {
 }
 
 .categorias img {
-    width: 4vw;
+    width: 4.5vw;
     height: auto;
     margin-bottom: 0.5vw;
 }
@@ -107,43 +101,52 @@ header input {
 
 
 
-
-
-
-
-
-
-
-.productos ul {
-    display: flex;
-    justify-content: space-around;
+.productos article {
     margin-top: 4vw;
-    padding: 2vw 0;
+    padding: 0.5vw;
+    border: 0.3vw darkgray solid;
+    height: 15%;
+    width: 16vw;
 }
 
-.productos li {
-    width: 20vw;
+.productos {
     text-align: center;
+    font-size: 1.2rem;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    margin-bottom: 3vw;
 }
 
-.producto-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1vw;
+.producto a{
+    height: 60%;
+    width: 90%;
 }
+
 
 .iconos {
-    width: 2vw;
+    width: 2.5vw;
     height: auto;
+    margin-inline: 2vw;
+    padding-top: 0.5vw;
 }
 
-.producto-info h3{
-    font-size: 1.2rem;
+.info-producto{
+    border-top: none;
+    ###TERMIANARRRRR
 }
 
+.producto p {
+    border-top: darkgray solid;
+    align-content: end;
+}
 
-
+.producto h4{
+    text-align: start;
+    padding-left: 1.5vw;
+    padding-top: 3vw;
+    font-size: 1.2vw;
+}
 
 
 
