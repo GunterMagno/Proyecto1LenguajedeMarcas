@@ -7,6 +7,9 @@
     font-family: monospace;
 }
 
+
+
+
 header {
     text-align: center;
     display: flex;
@@ -14,7 +17,7 @@ header {
     align-items: center;
     background-color: #4963bf;
     color: #e3d8d8;
-    padding: 1.5vw;
+    padding: 0.8vw;
 }
 
 header h1 {
@@ -37,14 +40,22 @@ header input {
     width: 20vw;
 }
 
-header nav ul li a {
-    color: #fff;
-    font-size: 1rem;
+.header img{
+    width: 1.8vw;
+    height: auto;
 }
 
-header nav ul li a:hover {
-    text-decoration: underline;
-}
+
+
+
+
+
+
+
+
+
+
+
 
 .slider {
     width: 100%;
@@ -59,6 +70,14 @@ header nav ul li a:hover {
     max-width: 100vw;
 }
 
+
+
+
+
+
+
+
+
 .categorias ul {
     display: flex;
     justify-content: space-around;
@@ -71,9 +90,22 @@ header nav ul li a:hover {
 }
 
 .categorias img {
-    width: 12vw;
+    width: 4vw;
     height: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .productos ul {
     display: flex;
@@ -87,11 +119,6 @@ header nav ul li a:hover {
     text-align: center;
 }
 
-.productos img {
-    width: 100%;
-    height: auto;
-}
-
 .producto-info {
     display: flex;
     justify-content: space-between;
@@ -99,32 +126,48 @@ header nav ul li a:hover {
     margin-top: 1vw;
 }
 
-.icons a {
-    margin: 0 1vw;
+.iconos {
+    width: 2vw;
+    height: auto;
 }
 
 .producto-info h2{
     font-size: 1.2rem;
 }
 
+
+
+
+
+
+
+
 footer {
     background: #f2f2f2;
-    padding: 2vw;
+    padding: 0.6vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     color: #333;
 }
 
-footer img {
-    width: 8vw;
+footer .logo {
+    width: 5vw;
     height: auto;
 }
 
+.img-contacto {
+    width: 1.2vw;
+    height: auto;
+    margin-right: 0.5vw;
+    vertical-align: middle;
+}
+
 .footer-text p,
-.footer-contact p {
+.footer-contacto p {
     max-width: 25rem;
     font-size: 0.9rem;
     line-height: 1.4;
+    margin-top: 1vw;
 }
