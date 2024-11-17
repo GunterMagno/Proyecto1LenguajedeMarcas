@@ -1,10 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>The Gunter's 3D Forge</title>
 </head>
+
 <body>
-$END$
+<header class="header">
+    <a href="index.html"> <img src="logo" alt="logo"> </a>
+    <h1>The Gunter's 3D Forge</h1>
+    <label>
+        <input type="text" name="busqueda" placeholder="Buscar">
+    </label>
+    <nav>
+        <ul>
+            <li><a href="#"><img src="img/mas.png" alt="Simbolo Añadir"></a></li>
+            <li><a href="#"><img src="img/luna.png" alt="Modo Nocturno"></a></li>
+            <li><a href="#"><img src="img/mundo.png" alt="Idioma"></a></li>
+            <li><a href="#"><img src="img/carrito.png" alt="Carrito"></a></li>
+            <li><a href="#"><img src="img/configuracion.png" alt="Configuracion"></a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="filtros">
+        <label for="precio">
+            <span>Precio:</span>
+            <select name="Precio" id="precio">
+                <option value="" selected>Todos</option>
+                <option value="Gratis">Gratis</option>
+                <option value="~1€">~1€</option>
+                <option value="1€ ~ 5€">1€ ~ 5€</option>
+            </select>
+        </label>
+        <label for="fecha">
+            <span>Fecha:</span>
+            <select name="Fecha" id="fecha">
+                <option value="" selected>Todos</option>
+                <option value="Reciente">Más reciente</option>
+                <option value="Semana">Esta semana</option>
+                <option value="Mes">Este mes</option>
+                <option value="Año">Este año</option>
+                <option value="Antiguo">Más antiguo</option>
+            </select>
+        </label>
+        <label for="categoria">
+            <span>Categoría:</span>
+            <select name="Categoria" id="categoria">
+                <option value="" selected>Todos</option>
+                <option value="Ciencia Ficcion">Ciencia Ficción</option>
+                <option value="Peliculas">Películas</option>
+                <option value="Arte">Arte</option>
+                <option value="Util">Útil</option>
+                <option value="Accesorios">Accesorios</option>
+            </select>
+        </label>
+    </section>
+
+
+
+    <section class="productos">
+        <article class="producto">
+            <a href="#"><img src="img/impresora-producto1.png" alt="Producto 1"></a>
+            <p class="info-producto">
+            <h3>Creality Ender 3 v2</h3>
+            <h4>199.9€</h4>
+            <p>
+                <a href="#"><img src="img/corazon.png" alt="Añadir a lista de deseos"></a>
+                <a href="#"><img src="img/anadir-al-carrito.png" alt="Añadir a cesta"></a>
+            </p>
+        </article>
+        <article class="producto">
+            <a href="#"><img src="img/impresora-producto2.png" alt="Producto 2"></a>
+            <p class="info-producto">
+            <h3>Creality K1 Cerrada</h3>
+            <h4>199.9€</h4>
+            <p>
+                <a href="#"><img src="img/corazon.png" alt="Añadir a lista de deseos"></a>
+                <a href="#"><img src="img/anadir-al-carrito.png" alt="Añadir a cesta"></a>
+            </p>
+        </article>
+        <article class="producto">
+            <a href="#"><img id="imagen-producto" src="img/impresora-producto3.png" alt="Producto 3"></a>
+            <p class="info-producto">
+            <h3>Bambu Lab P1SC</h3>
+            <h4>199.9€</h4>
+            <p>
+                <a href="#"><img src="img/corazon.png" alt="Añadir a lista de deseos"></a>
+                <a href="#"><img src="img/anadir-al-carrito.png" alt="Añadir a cesta"></a>
+            </p>
+        </article>
+        <article class="producto">
+            <a href="#"><img src="img/impresora-producto1.png" alt="Producto 4"></a>
+            <p class="info-producto">
+            <h3>Creality Ender 3 v2</h3>
+            <h4>199.9€</h4>
+            <p>
+                <a href="#"><img src="img/corazon.png" alt="Añadir a lista de deseos"></a>
+                <a href="#"><img src="img/anadir-al-carrito.png" alt="Añadir a cesta"></a>
+            </p>
+        </article>
+    </section>
+    <section class="productos">
+        <article class="producto">
+            <a href="#"><img src="img/impresora-producto1.png" alt="Producto 1"></a>
+            <p class="info-producto">
+            <h3>Creality Ender 3 v2</h3>
+            <h4>199.9€</h4>
+            <p>
+                <a href="#"><img class="iconos" src="img/corazon.png" alt="Añadir a lista de deseos"></a>
+                <a href="#"><img class="iconos" src="img/anadir-al-carrito.png" alt="Añadir a cesta"></a>
+            </p>
+        </article>
+        <article class="producto">
+            <a href="#"><img src="img/impresora-producto1.png" alt="Producto 1"></a>
+            <p class="info-producto">
+            <h3>Creality Ender 3 v2</h3>
+            <h4>199.9€</h4>
+            <p>
+                <a href="#"><img class="iconos" src="img/corazon.png" alt="Añadir a lista de deseos"></a>
+                <a href="#"><img class="iconos" src="img/anadir-al-carrito.png" alt="Añadir a cesta"></a>
+            </p>
+        </article>
+        <article class="producto">
+            <a href="#"><img src="img/impresora-producto1.png" alt="Producto 1"></a>
+            <p class="info-producto">
+            <h3>Creality Ender 3 v2</h3>
+            <h4>199.9€</h4>
+            <p>
+                <a href="#"><img class="iconos" src="img/corazon.png" alt="Añadir a lista de deseos"></a>
+                <a href="#"><img class="iconos" src="img/anadir-al-carrito.png" alt="Añadir a cesta"></a>
+            </p>
+        </article>
+        <article class="producto">
+            <a href="#"><img src="img/impresora-producto1.png" alt="Producto 1"></a>
+            <p class="info-producto">
+            <h3>Creality Ender 3 v2</h3>
+            <h4>199.9€</h4>
+            <p>
+                <a href="#"><img class="iconos" src="img/corazon.png" alt="Añadir a lista de deseos"></a>
+                <a href="#"><img class="iconos" src="img/anadir-al-carrito.png" alt="Añadir a cesta"></a>
+            </p>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <img class="logo" src="logo" alt="Logo">
+    <section class="footer-text">
+        <p>Bienvenido a The Gunter's 3D Forge, tu tienda en línea donde encontrarás todo lo necesario para tus proyectos de impresión 3D. Tenemos modelos 3D, filamentos, impresoras y más, todo de alta calidad. ¡Explora nuestros productos y empieza a crear lo que imagines!</p>
+    </section>
+    <article class="footer-contacto">
+        <p><img class="img-contacto" src="img/telefono.png" alt="Imagen telefono">   Tlf: 666 69 33 24</p>
+        <p><img class="img-contacto" src="img/ubicacion.png" alt="Imagen ubicacion">   C/MiraSierra Aceituna Nº33</p>
+        <p><img class="img-contacto" src="img/correo.png" alt="Imagen correo">   gunters3dforge@gmail.com</p>
+    </article>
+</footer>
 </body>
 </html>
