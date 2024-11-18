@@ -295,6 +295,11 @@ footer .logo {
     .producto{
         width: 100%;
     }
+    .productos{
+        width: 90%;
+        flex-direction: column;
+        padding: 3rem;
+    }
 }
 
 @media (width <= 900px) {
