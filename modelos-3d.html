@@ -11,11 +11,9 @@
 <header class="header">
     <a href="index.html"> <img src="logo" alt="logo"> </a>
     <h1>The Gunter's 3D Forge</h1>
-    <form>
-        <label>
-            <input type="text" name="busqueda" placeholder="Buscar">
-        </label>
-    </form>
+    <label>
+        <input type="text" name="busqueda" placeholder="Buscar">
+    </label>
     <nav>
         <ul>
             <li><a href="#"><img src="img/mas.png" alt="Simbolo Añadir"></a></li>
@@ -28,38 +26,48 @@
 </header>
 
 <main>
-    <section class="slider">
-        <a href="#"><img src="slider-imagen1" alt="Slider 1"></a>
-        <a href="#"><img src="slider-imagen2" alt="Slider 2"></a>
-        <a href="#"><img src="slider-imagen3" alt="Slider 3"></a>
+    <section class="filtros">
+        <label for="precio">
+            <span>Precio:</span>
+            <select name="Precio" id="precio">
+                <option value="" selected>Todos</option>
+                <option value="Gratis">Gratis</option>
+                <option value="~1€">~1€</option>
+                <option value="1€ ~ 5€">1€ ~ 5€</option>
+            </select>
+        </label>
+        <label for="fecha">
+            <span>Fecha:</span>
+            <select name="Fecha" id="fecha">
+                <option value="" selected>Todos</option>
+                <option value="Reciente">Más reciente</option>
+                <option value="Semana">Esta semana</option>
+                <option value="Mes">Este mes</option>
+                <option value="Año">Este año</option>
+                <option value="Antiguo">Más antiguo</option>
+            </select>
+        </label>
+        <label for="categoria">
+            <span>Categoría:</span>
+            <select name="Categoria" id="categoria">
+                <option value="" selected>Todos</option>
+                <option value="Ciencia Ficcion">Ciencia Ficción</option>
+                <option value="Peliculas">Películas</option>
+                <option value="Arte">Arte</option>
+                <option value="Util">Útil</option>
+                <option value="Accesorios">Accesorios</option>
+            </select>
+        </label>
     </section>
 
-    <section class="categorias">
-        <ul>
-            <li><a href="modelos-3d.html"> <img src="img/modelo-3d.png" alt="Modelos 3D"> </a>
-                <h2>Modelos 3D</h2>
-            </li>
-            <li><a href="#"> <img src="img/figura.png" alt="Figuras"> </a>
-                <h2>Figuras</h2>
-            </li>
-            <li><a href="#"> <img src="img/filamento.png" alt="Filamento"> </a>
-                <h2>Filamento</h2>
-            </li>
-            <li><a href="#"> <img src="img/impresora-3d.png" alt="Impresoras 3D"> </a>
-                <h2>Impresoras 3D</h2>
-            </li>
-            <li><a href="#"> <img src="img/componente.png" alt="Componentes"> </a>
-                <h2>Componentes</h2>
-            </li>
-        </ul>
-    </section>
+
 
     <section class="productos">
         <article class="producto">
             <a href="#"><img src="img/impresora-producto1.png" alt="Producto 1"></a>
             <p class="info-producto">
-                <h3>Creality Ender 3 v2</h3>
-                <h4>199.9€</h4>
+            <h3>Creality Ender 3 v2</h3>
+            <h4>199.9€</h4>
             <p>
                 <a href="#"><img src="img/corazon.png" alt="Añadir a lista de deseos"></a>
                 <a href="#"><img src="img/anadir-al-carrito.png" alt="Añadir a cesta"></a>
@@ -68,8 +76,8 @@
         <article class="producto">
             <a href="#"><img src="img/impresora-producto2.png" alt="Producto 2"></a>
             <p class="info-producto">
-                <h3>Creality K1 Cerrada</h3>
-                <h4>199.9€</h4>
+            <h3>Creality K1 Cerrada</h3>
+            <h4>199.9€</h4>
             <p>
                 <a href="#"><img src="img/corazon.png" alt="Añadir a lista de deseos"></a>
                 <a href="#"><img src="img/anadir-al-carrito.png" alt="Añadir a cesta"></a>
@@ -78,8 +86,8 @@
         <article class="producto">
             <a href="#"><img id="imagen-producto" src="img/impresora-producto3.png" alt="Producto 3"></a>
             <p class="info-producto">
-                <h3>Bambu Lab P1SC</h3>
-                <h4>199.9€</h4>
+            <h3>Bambu Lab P1SC</h3>
+            <h4>199.9€</h4>
             <p>
                 <a href="#"><img src="img/corazon.png" alt="Añadir a lista de deseos"></a>
                 <a href="#"><img src="img/anadir-al-carrito.png" alt="Añadir a cesta"></a>
