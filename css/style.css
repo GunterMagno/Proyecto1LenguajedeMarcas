@@ -105,12 +105,7 @@ header input {
 
 
 
-.productos article {
-    margin-top: 4vw;
-    padding: 0.5vw;
-    border: 0.3vw darkgray solid;
-    width: 17%;
-}
+
 
 .productos {
     text-align: center;
@@ -121,20 +116,27 @@ header input {
     margin-bottom: 3vw;
 }
 
-.producto img {
-    width: 70%;
-}
-
-.productos .imagen-producto {
-    background-color: red;
-}
-
-
 .productos p img {
     width: 2.5vw;
     height: auto;
     margin-inline: 2vw;
     padding-top: 0.5vw;
+}
+
+.producto {
+    margin-top: 4vw;
+    padding: 0.5vw;
+    border: 0.3vw darkgray solid;
+    width: 15%;
+    height: 15%;
+    overflow: hidden;
+}
+
+.producto img {
+    height: 25rem;
+    width: 25rem;
+    object-fit: contain;
+    object-position: center;
 }
 
 .producto p {
@@ -189,14 +191,14 @@ footer .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3vw;               /* Espaciado más amplio entre los filtros */
+    gap: 3vw;
     margin-top: 4vw;
     padding: 2vw;
     width: 100%;
     box-sizing: border-box;
-    background-color: #f9f9f9; /* Fondo suave para destacar la sección */
+    background-color: #f9f9f9;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .filtros label {
@@ -210,10 +212,9 @@ footer .logo {
 
 .filtros span {
     margin-bottom: 0.5rem;
-    font-size: 1.2rem; /* Aumenta el tamaño del texto */
-    font-weight: bold; /* Hace que el texto sea más grueso */
-    color: #444;       /* Un gris ligeramente más oscuro */
-    text-transform: capitalize; /* Opcional: hace que la primera letra de cada palabra sea mayúscula */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #444;
 }
 
 .filtros select {
@@ -222,17 +223,14 @@ footer .logo {
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #fff;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
 .filtros select:hover {
-    border-color: #007BFF; /* Azul claro al pasar el cursor */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Resalta con sombra */
+    border-color: #188caa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .filtros select:focus {
-    border-color: #0056b3; /* Azul más intenso al enfocar */
-    box-shadow: 0 0 8px rgba(0, 86, 179, 0.8);
-    outline: none; /* Elimina el borde predeterminado de enfoque */
+    border-color: #05888a;
 }
