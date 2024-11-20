@@ -128,6 +128,7 @@ header input {
 .categorias li:hover{
     transform: scale(1.2);
     transition: all ease 0.5s;
+    text-decoration: underline;
 }
 
 
@@ -287,31 +288,87 @@ footer .logo {
 
 /*
 ------------------
-      responsive
+     responsive
 ------------------
  */
 
 @media (width <= 1150px){
+
+    .header img {
+        width: 2.5vw;
+        height: auto;
+        padding: 0.3rem;
+    }
+
     .producto{
-        width: 100%;
+        width: 50%;
+        flex-direction: row;
+        justify-content: space-between;
     }
     .productos{
         width: 90%;
         flex-direction: column;
         padding: 3rem;
+    }
+    .productos p img {
+        width: 10%;
+        height: auto;
+        flex-direction: row;
     }
 }
 
 @media (width <= 900px) {
+
+    .categorias {
+        padding-top: 10vw;
+    }
+
+    .categorias img {
+        width: 40%;
+        padding: 3vw;
+    }
+
+    .categorias h2{
+        font-size: 1rem;
+    }
+
     .productos{
-        width: 90%;
+        width: 100%;
         flex-direction: column;
-        padding: 3rem;
+        padding: 1rem;
     }
 
     .productos p img{
-        width: 10%;
-        margin-inline: 10vw;
+        width: 15%;
+    }
+
+    .producto h4{
+        font-size: 1.5rem;
+    }
+}
+@media (width <= 500px) {
+    .categorias {
+        padding-top: 10vw;
+    }
+
+    .categorias ul{
+        flex-direction: column;
+    }
+
+    .categorias img {
+        width: 15%;
+        padding: 3vw;
+    }
+
+    .productos{
+        width: 100%;
+        flex-direction: column;
+        padding: 3rem;
+        padding: 0;
+    }
+
+    .productos p img{
+        width: 20%;
     }
 
     .producto h4{
