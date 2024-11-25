@@ -1,10 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>The Gunter's 3D Forge - Configuration</title>
+    </head>
+
+    <body>
+    <header class="header">
+        <a href="index.html"> <img src="logo" alt="logo"> </a>
+        <h1>The Gunter's 3D Forge</h1>
+        <form>
+            <label>
+                <input type="text" name="busqueda" placeholder="Buscar">
+            </label>
+        </form>
+        <nav>
+            <ul>
+                <li><a href="#"><img src="img/mas.png" alt="Simbolo Añadir"></a></li>
+                <li><a href="#"><img src="img/luna.png" alt="Modo Nocturno"></a></li>
+                <li><a href="#"><img src="img/mundo.png" alt="Idioma"></a></li>
+                <li><a href="#"><img src="img/carrito.png" alt="Carrito"></a></li>
+                <li><a href="configuracion.html"><img src="img/configuracion.png" alt="Configuracion"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="perfil"><img src="img/usuario.png" alt="imagen-perfil"><h1>Mi Perfil</h1></div>
+        <section class="nav-config">
+            <nav>
+                <ul>
+                    <li><img src="img/configuracion.png" alt="imagen-configuracion"><a href="configuracion.html">Mis Datos</a></li>
+                    <li><img src="img/pregunta.png" alt="imagen-soporte"><a href="soporte.html">¿Necesitas ayuda?</a></li>
+                    <li><img src="img/cerrar-sesion.png" alt="imagen-cerrar-sesion"><a href="inicio-sesion.html">Cerrar sesión</a></li>
+                </ul>
+            </nav>
+            <section class="form-config">
+                <form>
+                    <article class="formulario">
+                        <label for="nombre-usuario">Nombre Usuario:</label>
+                        <input type="text" id="nombre-usuario">
+                        <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre">
+                        <label for="apellidos">Apellidos:</label>
+                            <input type="text" id="apellidos">
+                        <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                            <input type="date" id="fecha-nacimiento">
+                        <label for="direccion">Dirección:</label>
+                            <input type="text" id="direccion">
+                        <label for="contraseña-antigua">Contraseña Antigua:</label>
+                            <input type="password" id="contraseña-antigua">
+                        <label for="contraseña-nueva">Contraseña nueva:</label>
+                            <input type="password" id="contraseña-nueva">
+                        <article class="botones">
+                            <button type="button" class="boton-guardar-cambios"><img src="img/disco-guardar.png" alt="imagen-guardar">Guardar Cambios</button>
+                            <button type="button" class="boton-cancelar"><img src="img/mas.png" alt="imagen-cancelar">Cancelar</button>
+                        </article>
+                    </article>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <img class="logo" src="logo" alt="Logo">
+        <section class="footer-text">
+            <p>Bienvenido a The Gunter's 3D Forge, tu tienda en línea donde encontrarás todo lo necesario para tus proyectos de impresión 3D. Tenemos modelos 3D, filamentos, impresoras y más, todo de alta calidad. ¡Explora nuestros productos y empieza a crear lo que imagines!</p>
+        </section>
+        <article class="footer-contacto">
+            <p><img class="img-contacto" src="img/telefono.png" alt="Imagen telefono">   Tlf: 666 69 33 24</p>
+            <p><img class="img-contacto" src="img/ubicacion.png" alt="Imagen ubicacion">   C/MiraSierra Aceituna Nº33</p>
+            <p><img class="img-contacto" src="img/correo.png" alt="Imagen correo">   gunters3dforge@gmail.com</p>
+        </article>
+    </footer>
+    </body>
+    </html>
