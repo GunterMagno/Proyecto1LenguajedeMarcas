@@ -512,19 +512,19 @@ footer .logo {
 }
 
 .boton-guardar-cambios {
-    background-color: #4caf50;
+    background-color: var(--color-button-guardar);
 }
 
 .boton-cancelar {
-    background-color: var(--color-button-cancel);
+    background-color: var(--color-button-cancelar);
 }
 
 .boton-cancelar:hover {
-    background-color: #b80c0c;
+    background-color: #c31d1d;
 }
 
 .boton-guardar-cambios:hover {
-    background-color: #388e3c;
+    background-color: #44a348;
 }
 
 .boton-guardar-cambios img, .boton-cancelar img{
@@ -536,6 +536,39 @@ footer .logo {
 .form-config .formulario input[type="text"] {
     margin-bottom: 20px;
 }
+
+
+
+
+/*
+--------------------------
+         inicio sesion
+--------------------------
+ */
+
+.main-inicio-sesion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.form-inicio-sesion{
+    width: 80%;
+    margin: 15vh 0 0 0;
+    padding: 2rem;
+    background-color: var(--color-background);
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 40vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
 
 
 /*
@@ -557,8 +590,8 @@ footer .logo {
     --color-hover: #0288d1;
     --color-focus: #039be5;
     --color-footer: #9e9e9e;
-    --color-button-primary: #4caf50;
-    --color-button-cancel: #f44336;
+    --color-button-guardar: #4caf50;
+    --color-button-cancelar: #f44336;
 }
 
 [data-theme="dark"] {
@@ -573,8 +606,8 @@ footer .logo {
     --color-hover: #188caa;
     --color-focus: #05888a;
     --color-footer: #333333;
-    --color-button-primary: #388e3c;
-    --color-button-cancel: #b80c0c;
+    --color-button-guardar: #388e3c;
+    --color-button-cancelar: #b80c0c;
 }
 
 
