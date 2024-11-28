@@ -29,22 +29,40 @@
 </header>
 
 <main class="main-inicio-sesion">
-    <section class="form-inicio-sesion">
-        <form>
-            <article class="formulario">
-                <label for="nombre-usuario">Nombre Usuario:</label>
-                <input type="text" id="nombre-usuario">
-                <label for="contraseña-antigua">Contraseña:</label>
-                <input type="password" id="contraseña-antigua">
-                <label>Récuerdame
-                <input type="checkbox"></label>
-                <article class="botones">
-                    <button type="button" class="boton-guardar-cambios">Iniciar Sesión</button>
-                </article>
-            </article>
-        </form>
-    </section>
+    <form class="form-inicio-sesion">
+        <h2 class="form-h2">Login</h2>
+
+        <label class="form-label-inicio">Correo o Usuario:</label>
+        <input class="form-input-inicio" type="text" placeholder="Introduce tu correo o usuario">
+
+        <label class="form-label-inicio">Contraseña:</label>
+        <input class="form-input-inicio" type="password" placeholder="Introduce tu contraseña">
+        <p class="columna1111">
+            <label class="form-recordar">
+                <input class="form_check" type="checkbox">
+                Recuérdame</label>
+
+            <a class="form-inicio-login" href="index.html">Login</a>
+        </p>
+        <p class="form-inicio-links">
+            <a class="form-inicio-link" href="#">¿Problemas para iniciar sesión?</a> |
+            <a class="form-inicio-link" href="#">¿No tienes cuenta? Crea una</a>
+        </p>
+
+        <p class="form-texto">También puedes iniciar sesión con:</p>
+
+        <a class="google form-link" href="#">
+            <img class="img-inicio" src="img/p" alt="Google"> Google
+        </a>
+
+        <a class="twitter form-link" href="#">
+            <img class="img-inicio" src="img/p" alt="Twitter"> Twitter
+        </a>
+    </form>
 </main>
+
+
+
 
 <footer>
     <img class="logo" src="logo" alt="Logo">
