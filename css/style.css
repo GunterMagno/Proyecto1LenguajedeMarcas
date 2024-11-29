@@ -48,6 +48,10 @@ header nav ul {
     background-color: var(--color-primary);
 }
 
+header nav ul li{
+    background-color: inherit;
+}
+
 header nav ul li a{
     background-color: var(--color-primary);
 }
@@ -105,6 +109,18 @@ header .logo{
     width: 3.5vw;
     padding-left: 4vw;
     padding-right: 4vw;
+}
+
+header input {
+    display: none;
+}
+
+header select {
+    display: none;
+}
+
+#mundo:checked ~ label .selector {
+    display: block;
 }
 
 /*

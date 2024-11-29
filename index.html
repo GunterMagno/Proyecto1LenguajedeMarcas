@@ -21,7 +21,19 @@
         <ul>
             <li><a href="#"><img src="img/mas.png" alt="Simbolo Añadir"></a></li>
             <li><a href="#" onclick="toggleTheme()" id="theme-icon"><img src="img/luna.png" alt="Modo Nocturno"></a></li>
-            <li><a href="#"><img src="img/mundo.png" alt="Idioma"></a></li>
+            <li>
+                <label>
+                    <input type="checkbox" id="mundo">
+                    <img src="img/mundo.png" alt="Idioma">
+                </label>
+
+                <label for="mundo">
+                    <select name="idioma" class="selector">
+                        <option value="español" selected>Español</option>
+                        <option value="ingles">English</option>
+                    </select>
+                </label>
+            </li>
             <li><a href="#"><img src="img/carrito.png" alt="Carrito"></a></li>
             <li><a href="configuracion.html"><img src="img/usuario.png" alt="Configuracion"></a></li>
         </ul>
