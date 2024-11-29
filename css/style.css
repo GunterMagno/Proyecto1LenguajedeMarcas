@@ -585,10 +585,8 @@ footer .logo{
 }
 
 .boton-guardar-cambios:hover, .boton-cancelar:hover {
-    background-color: #333;
     transform: scale(1.1);
     transition: all ease 0.3s;
-    background-color: inherit;
 }
 
 .boton-guardar-cambios {
@@ -632,7 +630,7 @@ footer .logo{
     align-items: center;
     justify-content: center;
     background-color: var(--color-background);
-    margin-bottom: 5vh; ####NOFUNCIONAAAA######c
+    margin-bottom: 9vh;
 }
 
 .form-inicio-sesion {
