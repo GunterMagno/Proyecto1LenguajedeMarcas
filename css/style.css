@@ -97,6 +97,15 @@ header h1:hover{
     transition: all ease 0.5s;
 }
 
+header a{
+    background-color: inherit;
+}
+
+header .logo{
+    width: 3.5vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
 
 /*
 ------------------
@@ -205,6 +214,11 @@ header h1:hover{
     height: 18.5%;
     overflow: hidden;
     border-radius: 10px;
+    background-color: var(--color-background-producto);
+}
+
+.producto *{
+    background-color: inherit;
 }
 
 .producto img {
@@ -267,6 +281,10 @@ footer .logo {
     line-height: 1.4;
     padding-top: 1vw;
     background-color: var(--color-footer);
+}
+
+footer .logo{
+    width: 8vw;
 }
 
 
@@ -736,6 +754,7 @@ footer .logo {
 :root {
     /* Tema claro */
     --color-background: #f9f9f9;
+    --color-background-producto: #f9f9f9;
     --color-text: #333333;
     --color-primary: #8e8c8c;
     --color-secondary: #807d7d;
@@ -753,6 +772,7 @@ footer .logo {
 [data-theme="dark"] {
     /* Tema oscuro */
     --color-background: #474444;
+    --color-background-producto: #686565;
     --color-text: #e3d8d8;
     --color-primary: #515151;
     --color-secondary: #e3d8d8;
