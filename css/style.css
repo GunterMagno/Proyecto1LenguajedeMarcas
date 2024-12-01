@@ -681,6 +681,8 @@ footer .logo{
 .form-recordar {
     margin-top: 1rem;
     padding-bottom: 2vh;
+    display: flex;
+    align-items: start;
 }
 
 .form-inicio-login{
@@ -741,7 +743,7 @@ footer .logo{
 }
 
 .google {
-    background-color: var(--color-button-cancelar);
+    background-color: #d53c3c;
     margin-inline: 2vh;
 }
 

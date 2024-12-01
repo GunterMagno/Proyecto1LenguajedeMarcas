@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js"></script>
+  <title>Registrarse - The Gunter's 3D Forge</title>
+</head>
+
+<body>
+<header class="header">
+  <a href="index.html"> <img class="logo" src="img/logo.png" alt="logo"> </a>
+  <h1>The Gunter's 3D Forge</h1>
+  <form>
+    <label>
+      <input type="text" name="busqueda" placeholder="Buscar">
+    </label>
+  </form>
+  <nav>
+    <ul>
+      <li><a href="#"><img src="img/mas.png" alt="Simbolo Añadir"></a></li>
+      <li><a href="#" onclick="toggleTheme()" id="theme-icon"><img src="img/luna.png" alt="Modo Nocturno"></a></li>
+      <li><a href="#"><img src="img/mundo.png" alt="Idioma"></a></li>
+      <li><a href="#"><img src="img/carrito.png" alt="Carrito"></a></li>
+      <li><a href="configuracion.html"><img src="img/usuario.png" alt="Configuracion"></a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="main-inicio-sesion">
+  <form class="form-inicio-sesion">
+    <h2 class="form-h2">Iniciar Sesión</h2>
+
+    <label class="form-label-inicio">Correo o Usuario:</label>
+    <input class="form-input-inicio" type="text" placeholder="Introduce tu correo o usuario">
+
+    <label class="form-label-inicio">Contraseña:</label>
+    <input class="form-input-inicio" type="password" placeholder="Introduce tu contraseña">
+    <p class="columna1111">
+      <label class="form-recordar">
+        <input class="form_check" type="checkbox">
+        Recuérdame</label>
+
+      <a class="form-inicio-login" href="index.html">Iniciar Sesión</a>
+    </p>
+    <p class="form-inicio-links">
+      <a class="form-inicio-link" href="#">¿Problemas para iniciar sesión?</a> |
+      <a class="form-inicio-link" href="#">¿No tienes cuenta? Crea una</a>
+    </p>
+
+    <p class="form-texto">También puedes iniciar sesión con:</p>
+
+    <a class="google form-link" href="#">
+      <img class="img-inicio" src="img/google.png" alt="Google"> Google
+    </a>
+
+    <a class="twitter form-link" href="#">
+      <img class="img-inicio" src="img/twitter.png" alt="Twitter"> Twitter
+    </a>
+  </form>
+</main>
+
+
+
+
+<footer>
+  <img class="logo" src="img/logo.png" alt="Logo">
+  <section class="footer-text">
+    <p>Bienvenido a The Gunter's 3D Forge, tu tienda en línea donde encontrarás todo lo necesario para tus proyectos de impresión 3D. Tenemos modelos 3D, filamentos, impresoras y más, todo de alta calidad. ¡Explora nuestros productos y empieza a crear lo que imagines!</p>
+  </section>
+  <article class="footer-contacto">
+    <p><img class="img-contacto" src="img/telefono.png" alt="Imagen telefono">   Tlf: 666 69 33 24</p>
+    <p><img class="img-contacto" src="img/ubicacion.png" alt="Imagen ubicacion">   C/MiraSierra Aceituna Nº33</p>
+    <p><img class="img-contacto" src="img/correo.png" alt="Imagen correo">   gunters3dforge@gmail.com</p>
+  </article>
+</footer>
+</body>
+</html>
