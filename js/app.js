@@ -5,14 +5,14 @@ function toggleTheme() {
     // Si el tema actual es oscuro, cambia a claro
     if (currentTheme.getAttribute('data-theme') === 'dark') {
         currentTheme.setAttribute('data-theme', 'light');
-        // Cambiar el ícono a luna (modo nocturno)
+        // Cambiar el ícono (modo nocturno)
         document.getElementById('theme-icon').innerHTML = '<img src="img/luna.png" alt="Modo Nocturno">';
         // Guardar la preferencia en localStorage
         localStorage.setItem('modoOscuro', 'desactivado');
     } else {
         // Si el tema actual es claro, cambia a oscuro
         currentTheme.setAttribute('data-theme', 'dark');
-        // Cambiar el ícono a sol (modo claro)
+        // Cambiar el ícono (modo claro)
         document.getElementById('theme-icon').innerHTML = '<img src="img/luna-rellena.png" alt="Modo Claro">';
         // Guardar la preferencia en localStorage
         localStorage.setItem('modoOscuro', 'activado');

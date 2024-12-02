@@ -14,6 +14,10 @@
     background-color: var(--color-background);
 }
 
+main{
+    min-height: 70vh;
+}
+
 
 /*
 ------------------
@@ -129,11 +133,14 @@ header .logo{
 
 .checkbox-idioma:checked + .contenedor-selector {
     display: block;
+    background: none;
 }
 
 .selector-idioma {
     width: 6vw;
     padding: 1vh;
+    margin-left: 2vw;
+    margin-top: 1.5vh;
     font-size: 1rem;
     background-color: var(--color-background);
     border: 1px solid var(--color-border);
@@ -784,6 +791,87 @@ footer .logo{
     vertical-align: middle;
     background-color: inherit;
 }
+
+
+/*
+-----------------------
+      producto-1
+-----------------------
+ */
+
+.sec-producto{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10vh;
+}
+
+
+.desc-producto{
+    margin-top: 4vw;
+    padding: 3vh;
+    width: 30%;
+    font-size: 1.5rem;
+    border: 5px solid var(--color-border);
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--color-text);
+    height: 30vh;
+}
+
+.desc-producto h1{
+    text-align: center;
+    text-decoration-line: underline;
+    width: 100%;
+}
+
+#precio, #desc{
+    text-decoration-line: underline;
+    color: var(--color-text);
+}
+
+.desc-producto h2{
+    text-align: left;
+    width: 40%;
+    color: var(--color-accent);
+
+}
+
+.desc-producto p{
+    text-align: left;
+}
+
+.pag-producto{
+    margin-top: 4vw;
+    padding: 0.5vw;
+    border: 0.3vw var(--color-border) solid;
+    width: 18.5%;
+    height: 18.5%;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: var(--color-background-producto);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pag-producto img {
+    width: 100%;
+    height: 25rem;
+    object-fit: contain;
+    object-position: center;
+}
+
+.pag-producto *{
+    background-color: inherit;
+}
+
+.producto-pequeño{
+    width: 25%;
+    height: 10%;
+}
+
 
 /*
 -----------------------
