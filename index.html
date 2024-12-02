@@ -22,14 +22,15 @@
             <li><a href="#"><img src="img/mas.png" alt="Simbolo Añadir"></a></li>
             <li><a href="#" onclick="toggleTheme()" id="theme-icon"><img src="img/luna.png" alt="Modo Nocturno"></a></li>
             <li>
-                <label>
-                    <input type="checkbox" id="mundo">
-                    <img src="img/mundo.png" alt="Idioma">
+                <label for="mostrar-selector">
+                    <img src="img/mundo.png" alt="Seleccionar idioma" class="icono-idioma">
                 </label>
 
-                <label for="mundo">
-                    <select name="idioma" class="selector">
-                        <option value="español">Español</option>
+                <input type="checkbox" id="mostrar-selector" class="checkbox-idioma">
+
+                <label for="mostrar-selector" class="contenedor-selector">
+                    <select name="idioma" class="selector-idioma">
+                        <option value="espanol">Español</option>
                         <option value="ingles">English</option>
                     </select>
                 </label>

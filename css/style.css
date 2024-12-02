@@ -94,6 +94,7 @@ header img:hover {
 header input:focus {
     transform: scale(1.1);
     transition: all ease 0.7s;
+    border-color: var(--color-accent);
 }
 
 header h1:hover{
@@ -111,17 +112,41 @@ header .logo{
     padding-right: 4vw;
 }
 
-#mundo {
+.checkbox-idioma {
     display: none;
 }
 
-header select {
-    display: none;
+.icono-idioma {
+    cursor: pointer;
 }
 
-#mundo:checked ~ label .selector {
+.contenedor-selector {
+    display: none;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.checkbox-idioma:checked + .contenedor-selector {
     display: block;
 }
+
+.selector-idioma {
+    width: 6vw;
+    padding: 1vh;
+    font-size: 1rem;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.selector-idioma:focus {
+    background-color: var(--color-background-producto);
+}
+
 
 /*
 ------------------
