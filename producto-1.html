@@ -21,7 +21,20 @@
         <ul>
             <li><a href="#"><img src="img/mas.png" alt="Simbolo Añadir"></a></li>
             <li><a href="#" onclick="toggleTheme()" id="theme-icon"><img src="img/luna.png" alt="Modo Nocturno"></a></li>
-            <li><a href="#"><img src="img/mundo.png" alt="Idioma"></a></li>
+            <li>
+                <label for="mostrar-selector">
+                    <img src="img/mundo.png" alt="Seleccionar idioma" class="icono-idioma">
+                </label>
+
+                <input type="checkbox" id="mostrar-selector" class="checkbox-idioma">
+
+                <label for="mostrar-selector" class="contenedor-selector">
+                    <select name="idioma" class="selector-idioma">
+                        <option value="espanol">Español</option>
+                        <option value="ingles">English</option>
+                    </select>
+                </label>
+            </li>
             <li><a href="#"><img src="img/carrito.png" alt="Carrito"></a></li>
             <li><a href="configuracion.html"><img src="img/usuario.png" alt="Configuracion"></a></li>
         </ul>
@@ -48,10 +61,9 @@
                 Función de reanudación de impresión: Protege tus avances en caso de interrupciones de energía.
                 Montaje rápido: Preensamblada en gran parte, lista para usar en menos de una hora.
                 Con un volumen de construcción de 220 x 220 x 250 mm y compatibilidad con filamentos como PLA, ABS y PETG, la Ender 3 V2 combina calidad, rendimiento y precio en una máquina robusta y confiable.</p>
-
         </article>
-
     </section>
+
     <section class="tabla-producto">
         <table border="1">
             <thead>
@@ -95,6 +107,94 @@
                 </tr>
             </tbody>
         </table>
+    </section>
+
+    <section class="sec-valoraciones">
+        <h1>Valoraciones</h1>
+        <article class="valoracion">
+            <article class="usuario">
+                <img class="icono-usuario" src="img/icono-usuario.jpg" alt="Icono Usuario">
+                <p>Tio chill</p>
+                <p>  |  Hace tres semanas  |  </p>
+                <article class="estrellas">
+                    <p>⭐⭐⭐⭐☆</p>
+                </article>
+            </article>
+            <article class="comentario">
+                <hr class="linea">
+                <p class="texto-comentario">
+                    Este es un ejemplo de un comentario largo que podría ir aquí, en donde se expresa la experiencia del usuario con el producto. La opinión puede incluir detalles sobre el rendimiento, el diseño y otras características que el usuario considere importantes.
+                </p>
+            </article>
+            <article class="imagen">
+                <img alt="Imagen que pueden aportar" src="#">
+            </article>
+        </article>
+
+        <article class="valoracion">
+            <article class="usuario">
+                <img class="icono-usuario" src="img/icono-usuario2.png" alt="Icono Usuario">
+                <p>Paco Terminator 3000</p>
+                <p>  |  Hace cuatro días  |  </p>
+                <article class="estrellas">
+                    <p>⭐⭐⭐☆ ☆</p>
+                </article>
+            </article>
+            <article class="comentario">
+                <hr class="linea">
+                <p class="texto-comentario">
+                    Este es otro ejemplo de un comentario, donde el usuario puede compartir su opinión sobre la calidad, la durabilidad y la facilidad de uso del producto.
+                </p>
+            </article>
+            <article class="imagen-valoracion">
+                <img alt="Imagen que pueden aportar" src="#">
+            </article>
+        </article>
+    </section>
+
+
+    <section class="productos">
+        <h1>Productos Relacionados</h1>
+        <article class="producto">
+            <a href="producto-1.html"><img src="img/impresora-producto1.png" alt="Producto 1"></a>
+            <p class="info-producto">
+            <h3>Creality Ender 3 v2</h3>
+            <h4>199.9€</h4>
+            <p>
+                <a href="#"><img src="img/corazon.png" alt="Añadir a lista de deseos"></a>
+                <a href="#"><img src="img/anadir-al-carrito.png" alt="Añadir a cesta"></a>
+            </p>
+        </article>
+        <article class="producto">
+            <a href="#"><img src="img/impresora-producto2.png" alt="Producto 2"></a>
+            <p class="info-producto">
+            <h3>Creality K1 Cerrada</h3>
+            <h4>199.9€</h4>
+            <p>
+                <a href="#"><img src="img/corazon.png" alt="Añadir a lista de deseos"></a>
+                <a href="#"><img src="img/anadir-al-carrito.png" alt="Añadir a cesta"></a>
+            </p>
+        </article>
+        <article class="producto">
+            <a href="#"><img id="imagen-producto" src="img/impresora-producto3.png" alt="Producto 3"></a>
+            <p class="info-producto">
+            <h3>Bambu Lab P1SC</h3>
+            <h4>199.9€</h4>
+            <p>
+                <a href="#"><img src="img/corazon.png" alt="Añadir a lista de deseos"></a>
+                <a href="#"><img src="img/anadir-al-carrito.png" alt="Añadir a cesta"></a>
+            </p>
+        </article>
+        <article class="producto">
+            <a href="#"><img src="img/impresora-producto1.png" alt="Producto 4"></a>
+            <p class="info-producto">
+            <h3>Creality Ender 3 v2</h3>
+            <h4>199.9€</h4>
+            <p>
+                <a href="#"><img src="img/corazon.png" alt="Añadir a lista de deseos"></a>
+                <a href="#"><img src="img/anadir-al-carrito.png" alt="Añadir a cesta"></a>
+            </p>
+        </article>
     </section>
 </main>
 
