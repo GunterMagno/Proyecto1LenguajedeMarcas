@@ -526,7 +526,7 @@ footer .logo{
 
 .nav-config{
     padding: 2vw 1vw;
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 15vh;
@@ -828,6 +828,7 @@ footer .logo{
     text-align: center;
     text-decoration-line: underline;
     width: 100%;
+    margin-bottom: 3rem;
 }
 
 #precio, #desc{
@@ -897,6 +898,7 @@ footer .logo{
         width: 60%;
         font-size: 2rem;
         text-align: center;
+        border: 3px solid var(--color-border);
     }
 }
 
@@ -963,7 +965,214 @@ footer .logo{
     line-height: 1.6;
 }
 
+#fecha-entrega{
+    width: 100%;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #44a348;
+}
 
+#añadir-carrito{
+    width: 90%;
+    padding: 1rem;
+    margin: 1.5rem;
+    border: solid 0.1rem var(--color-secondary);
+    border-radius: 15px;
+    text-align: center;
+    background-color: var(--color-accent);
+    a{
+        background-color: inherit;
+        color: var(--color-form);
+    }
+}
+
+#añadir-carrito:hover{
+    transform: scale(1.05);
+    transition: all ease 0.5s;
+}
+
+
+/*
+-----------------------
+        carrito
+-----------------------
+ */
+
+.carrito {
+    width: 100%;
+    margin-top: 15vh;
+    color: var(--color-text);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.carrito h1 {
+    text-align: center;
+    color: var(--color-text);
+    font-size: 3vw;
+    margin-bottom: 2rem;
+    width: 100%;
+    text-decoration: underline;
+}
+
+.productos-pedido {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    border: 3px solid var(--color-border);
+    border-radius: 8px;
+}
+
+.producto-pedido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.producto-pedido a {
+    margin-right: 1rem;
+}
+
+.producto-pedido img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.eliminar-cantidad{
+    width: 100%;
+    img {
+        width: auto;
+        height: 3vh;
+    }
+}
+
+.producto-pedido-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.producto-pedido-desc h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.producto-pedido-desc h3 {
+    font-size: 1.2rem;
+}
+
+
+.producto-lista-pedido {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    height: auto;
+    margin-top: 2vh;
+    border: 3px solid var(--color-border);
+    border-radius: 6px;
+    justify-content: center;
+}
+
+
+.resumen-pedido {
+    width: 30%;
+    padding: 1rem;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-background);
+    border-radius: 8px;
+}
+
+.resumen-pedido p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+.resumen-pedido a {
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1.2rem;
+}
+
+.resumen-pedido a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 1px solid var(--color-border);
+    margin: 1.5rem 0;
+}
+
+.resumen-pedido p:last-child {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.resumen-pedido span:last-child {
+    color: #e74c3c;
+}
+
+.botones-pedido{
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+    color: var(--color-text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 90%;
+    height: 10vw;
+    img{
+        object-fit: contain;
+        width: 100%;
+        height: 4.5vw;
+    }
+}
+
+#codigo-promocional{
+    text-decoration: underline;
+}
+
+#realizar-pedido{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-button-guardar);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#paypal{
+    background-color: #75bcf4;
+    img{
+        background-color: #75bcf4;
+    }
+}
+
+.botones-pedido #realizar-pedido:hover{
+    transition: all ease 0.3s;
+    transform: scale(1.05);
+}
+
+.botones-pedido #paypal:hover{
+    transition: all ease 0.3s;
+    transform: scale(1.05);
+}
 
 /*
 -----------------------
