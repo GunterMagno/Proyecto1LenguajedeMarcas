@@ -975,7 +975,7 @@ footer .logo{
     color: #44a348;
 }
 
-#añadir-carrito{
+.añadir-carrito{
     width: 90%;
     padding: 1rem;
     margin: 1.5rem;
@@ -986,10 +986,18 @@ footer .logo{
     a{
         background-color: inherit;
         color: var(--color-form);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    img{
+        width: 10%;
+        object-fit: cover;
+        background-color: inherit;
     }
 }
 
-#añadir-carrito:hover{
+.añadir-carrito:hover{
     transform: scale(1.05);
     transition: all ease 0.5s;
 }
@@ -1051,11 +1059,46 @@ footer .logo{
 }
 
 .eliminar-cantidad{
-    width: 100%;
-    img {
+    width: 10%;
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .papelera{
         width: auto;
         height: 3vh;
     }
+    span{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.2rem;
+        button{
+            width: 1.2vw;
+            height: 1.2vw;
+            cursor: pointer;
+            background-color: #cdcbcb;
+            img{
+                background-color: inherit;
+            }
+        }
+    }
+}
+
+.eliminar-cantidad img:hover{
+    transform: scale(1.2);
+    transition: all ease 0.5s;
+}
+
+.papelera:hover{
+    transform: scale(1.05);
+    transition: all ease 0.5s;
+    cursor: pointer;
 }
 
 .producto-pedido-desc {
@@ -1085,19 +1128,19 @@ footer .logo{
     justify-content: center;
 }
 
-
 .resumen-pedido {
-    width: 30%;
+    width: 35%;
     padding: 1rem;
     border: 1px solid var(--color-border);
     background-color: var(--color-background);
     border-radius: 8px;
+    justify-content: center;
 }
 
 .resumen-pedido p {
     display: flex;
     justify-content: space-between;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     margin-bottom: 0.8rem;
 }
 
@@ -1130,13 +1173,12 @@ hr {
     justify-content: center;
     flex-direction: column;
     gap: 10px;
-    padding: 10px 20px;
+    padding: 1vh 2vh;
     color: var(--color-text);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: 90%;
     height: 10vw;
     img{
         object-fit: contain;
@@ -1173,6 +1215,147 @@ hr {
     transition: all ease 0.3s;
     transform: scale(1.05);
 }
+
+/*
+-----------------------
+      lista-deseados
+-----------------------
+ */
+
+main.lista-deseados {
+    padding: 1.5rem;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin-top: 15vh;
+}
+
+.lista-deseados-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.lista-deseados-header h1 {
+    font-size: 3rem;
+    color: var(--color-text);
+}
+
+.lista-deseados-header p {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    color: var(--color-secondary);
+}
+
+.lista-deseados-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.lista-deseados-item {
+    background-color: var(--color-background-producto);
+    border: 1px solid var(--color-border);
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 25vw;
+    padding: 1rem;
+    padding-inline: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.lista-deseados-item:hover {
+    transform: scale(1.02);
+}
+
+.lista-deseados-item img {
+    width: 100%;
+    max-height: 20vh;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    background-color: inherit;
+}
+
+.item-detalles{
+    background-color: inherit;
+    p{background-color: inherit;}
+    h2{background-color: inherit;}
+    nav{background-color: inherit;}
+}
+
+.item-detalles h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: var(--color-text);
+}
+
+.item-detalles p {
+    font-size: 0.9rem;
+    color: var(--color-placeholder);
+}
+
+.actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.actions a {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.actions .añadir-carro {
+    background-color: var(--color-button-guardar);
+}
+
+.actions .añadir-carro:hover {
+    transform: scale(1.1);
+    background-color: var(--color-hover);
+}
+
+.actions .eliminar-item {
+    background-color: var(--color-button-cancelar);
+}
+
+.actions .eliminar-item:hover {
+    transform: scale(1.1);
+    background-color: var(--color-hover);
+}
+
+.explorar-mas {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.explorar-a {
+    padding: 0.8rem 2rem;
+    background-color: var(--color-focus);
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.explorar-a:hover {
+    background-color: var(--color-hover);
+}
+
+
+
+
 
 /*
 -----------------------
