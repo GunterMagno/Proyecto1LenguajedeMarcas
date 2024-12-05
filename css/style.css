@@ -396,129 +396,6 @@ footer .logo{
 
 
 /*
-------------------
-     responsive
-------------------
- */
-
-
-@media (width <= 1335px){
-    .categorias {
-        justify-content: space-evenly;
-        align-items: center;
-        margin: 4vw;
-        width: 80%
-    }
-    .categorias img {
-        width: 40%;
-        padding: 3vw;
-    }
-    .categorias a {
-        width: 30%;
-    }
-    .categorias li{
-        width: 30%;
-        align-items: center;
-    }
-    .categorias ul {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .header img {
-        width: 2.5vw;
-        height: auto;
-        padding: 0.3rem;
-    }
-
-    .producto{
-        width: 25%;
-    }
-
-    .productos p img {
-        width: 4vw;
-        flex-direction: row;
-    }
-    .producto h4{
-        font-size: 1.4rem;
-    }
-}
-
-@media (width <= 1150px){
-    .categorias {
-        justify-content: space-evenly;
-        align-items: center;
-        margin: 4vw;
-        width: 80%
-    }
-    .categorias img {
-        width: 50%;
-        padding: 3vw;
-    }
-    .categorias a {
-        width: 30%;
-    }
-    .categorias li{
-        width: 30%;
-        align-items: center;
-    }
-    .categorias ul {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .header img {
-        width: 2.5vw;
-        height: auto;
-        padding: 0.3rem;
-    }
-
-    .producto{
-        width: 40%;
-    }
-
-    .productos p img {
-        width: 8vw;
-        flex-direction: row;
-    }
-    .producto h4{
-        font-size: 1.4rem;
-    }
-}
-
-
-@media (width <= 500px) {
-    .categorias img {
-        width: 50%;
-        padding: 3vw;
-    }
-    .categorias a {
-        width: 30%;
-    }
-    .categorias li{
-        width: 30%;
-        align-items: center;
-    }
-    .categorias ul {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .producto{
-        width: 80%;
-    }
-
-    .productos p img{
-        width: 20%;
-    }
-}
-
-
-
-/*
 ---------------------------
      pagina configuracion
 ----------------------------
@@ -1053,8 +930,7 @@ footer .logo{
 
 .producto-pedido img {
     width: 100%;
-    max-width: 120px;
-    height: auto;
+    max-width: 15vh;
     border-radius: 8px;
 }
 
@@ -1401,5 +1277,159 @@ main.lista-deseados {
 }
 
 
+/*
+------------------
+     responsive
+------------------
+ */
 
 
+@media (width <= 1335px){
+    .categorias {
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 4vw;
+        width: 80%
+    }
+    .categorias img {
+        width: 40%;
+        padding: 3vw;
+    }
+    .categorias a {
+        width: 30%;
+    }
+    .categorias li{
+        width: 30%;
+        align-items: center;
+    }
+    .categorias ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header img {
+        width: 2.5vw;
+        height: auto;
+        padding: 0.3rem;
+    }
+
+    .producto{
+        width: 25%;
+    }
+
+    .productos p img {
+        width: 4vw;
+        flex-direction: row;
+    }
+    .producto h4{
+        font-size: 1.4rem;
+    }
+}
+
+@media (width <= 1150px){
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .logo {
+            width: 10vw;
+        }
+    }
+
+    .header img {
+        width: 4vw;
+        height: auto;
+        padding: 3rem  1rem 1rem 0;
+    }
+
+    .header input{
+        width: 50vwq;
+    }
+
+    .categorias {
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 4vw;
+        width: 80%
+    }
+    .categorias img {
+        width: 50%;
+        padding: 3vw;
+    }
+    .categorias a {
+        width: 30%;
+    }
+    .categorias li{
+        width: 30%;
+        align-items: center;
+    }
+    .categorias ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .producto{
+        width: 40%;
+    }
+
+    .productos p img {
+        width: 8vw;
+        flex-direction: row;
+    }
+    .producto h4{
+        font-size: 1.4rem;
+    }
+
+    .footer-contacto img{
+        width: 2.5vw;
+    }
+}
+
+
+@media (width <= 500px) {
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .logo {
+            width: 15vw;
+        }
+    }
+
+    .header img {
+        width: 7vw;
+        height: auto;
+        padding: 0.3rem;
+    }
+
+    .categorias img {
+        width: 50%;
+        padding: 3vw;
+    }
+    .categorias a {
+        width: 30%;
+    }
+    .categorias li{
+        width: 30%;
+        align-items: center;
+    }
+    .categorias ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .producto{
+        width: 80%;
+    }
+
+    .productos p img{
+        width: 20%;
+    }
+}
