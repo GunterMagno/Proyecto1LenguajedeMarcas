@@ -715,9 +715,11 @@ footer .logo{
 
 .desc-producto h2{
     text-align: left;
-    width: 40%;
     color: var(--color-accent);
+}
 
+#precio{
+    width: 40%;
 }
 
 .desc-producto p{
@@ -1346,7 +1348,7 @@ main.lista-deseados {
     }
 
     .header input{
-        width: 50vwq;
+        width: 50vw;
     }
 
     .categorias {
